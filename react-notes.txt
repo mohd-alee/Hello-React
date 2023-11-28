@@ -1,0 +1,57 @@
+/** React Installation **/
+We've installed react using Vite. The command to install react via vite is npm create vite@latest {project-name} -- --template {any supported library/framework, React in our case}.
+
+/** Types of Import **/
+Default Import:
+import Something from "package-name";
+Named Import:
+import {Something1, Something2} from "package-name";
+Import Aliasing:
+import { Something1 as SomeName } from 'package-name';
+
+/** Creating Element in React **/
+In react, We use React.createElement() to create an element instead of document.createElement().
+The difference b/w them is React.createElement() returns an object while document.createElement() returns the element.
+The reason for this is React operates Virtual DOM(Explaination later). This allows React to perform performance optimization.
+React.createElement can take upto 3 parameters: React.createElement(type,options,children);
+E.g: React.createElement( `element`, {className: `value`, style: `key: value`}, `text inside the element`).
+Key Point: Every argument after 2nd one will be considered as a child element of newly created element.
+
+/** ReactDOM **/
+Then ReactDOM is the library that efficiently updates the DOM based on that Virtual DOM.
+The Virtual DOM exists to figure out which parts of the UI need to be updated and then batch these changes together. ReactDOM receives those instructions from React and then efficiently updates the DOM.
+
+/** Reconciliation **/
+React is responsible for creating the virtual representation of your UI in the memory, and then ReactDOM receives that and syncs your UI (and the changes to it) to the DOM. This process is called reconciliation.
+
+/** Defining Root **/
+This root element that you pass to ReactDOM will become completely managed by ReactDOM. So you should not write any kind of JavaScript that changes its content.
+import {createRoot} from 'react-dom/client';
+const root = document.querySelector('#root');
+createRoot(root).render();
+
+/** JSX **/
+JSX is a syntax created by React. JSX looks similar to HTML but it is not HTML.
+JSX code you write gets transformed into React.createElement
+JSX takes same 3 arguments as React.createElement().
+A JSX element is an object.
+Number and boolean attribute values should be passed as an expression.
+In JSX. you cannot open an element without closing it, thus it's recommended that you use the self-closing tag syntax: <img />
+
+/** React.Fragement **/
+In JSX. You're only allowed to return a single element. Since JSX converts into React.createElement() which returns an object. We can't return two or more objects at a same time. To avoid this issue. React Fragement(<></>) were introduced. The purpose of this is we can have a single object in return.
+Fun Fact: We can wrap multiple elements inside a <div></div> to get a single object in return. The difference b/w using div and fragement is:
+Using div will add extra div into our dom tree. Whereas using fragements will disappear while rendering.
+
+/** React Component **/
+React Components is a function that returns a React Element. Which can be used at different places in your application UI.
+Components defined with a function is called Function Components.
+Component name must follow the UpperCamelCase format while naming.
+How React differentiate b/w element and component.?
+React checks the first character. If it's an uppercase, It's a component. If it's a lowercase, It's an element.
+For self-closing components(components which does not have any children). You can use tha same syntax as element, i.e. <Component />
+
+/** React Props **/
+Props in react is same as arguments to plain functions. You pass props as an attribute to components and get them using the "props" which returns object of all the props passed to component.
+/** Children Props **/
+Children props are props that goes between the opening and closing tag of a component. Children props can be accessed with props.children. it can contain text and/or React Elements and/or React Components. Children props return single item or array in case of multiple items.
