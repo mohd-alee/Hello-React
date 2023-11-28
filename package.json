@@ -1,0 +1,11 @@
+{
+  "name": "hello-react",
+  "version": "1.0.0",
+  "description": "This is configuration file for npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alee",
+  "license": "ISC"
+}
