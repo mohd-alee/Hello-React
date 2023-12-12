@@ -3,6 +3,127 @@ import ReactDOM from "react-dom/client";
 import "boxicons";
 import logo from "./assets/imgs/app-logo.png";
 
+// Dummy Data for Restaurant Cards
+const reslist = [
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 1",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 2",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 3",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 4",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 5",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 6",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 7",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 8",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 9",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 10",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 11",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 12",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+	{
+		id: Math.floor(Math.random() * 999),
+		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
+		res_title: "Res Title 13",
+		res_rating: (Math.random() * 5).toFixed(2),
+		res_deliveryTime: Math.floor(Math.random() * 46),
+		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
+		res_location: "Hyderabad",
+	},
+];
+
 // Components
 const Header = () => {
 	return (
@@ -89,49 +210,40 @@ const RestaurantsWrapper = () => {
 		<section className="restaurant-wrapper">
 			<div className="container">
 				<div className="row">
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
-					<RestaurantCard />
+					{reslist.map((res_item) => {
+						return <RestaurantCard key={res_item.id} resDetails={res_item} />;
+					})}
 				</div>
 			</div>
 		</section>
 	);
 };
-const RestaurantCard = () => {
+const RestaurantCard = ({ resDetails } = props) => {
+	const {
+		image_url,
+		res_cuisines,
+		res_title,
+		res_rating,
+		res_deliveryTime,
+		res_location,
+	} = resDetails;
 	return (
 		<div className="col-md-3 mb-3">
 			<div className="single-res-card">
 				<div className="res-featured-image">
-					<img
-						src="https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg"
-						className="img-fluid"
-						alt="Restaurant Image"
-					/>
+					<img src={image_url} className="img-fluid" alt="Restaurant Image" />
 				</div>
 				<div className="res-deets pt-3">
-					<h5 className="res-title">Restaurant Title</h5>
+					<h5 className="res-title">{res_title}</h5>
 					<p className="res-rating d-flex align-items-center">
-						<box-icon type="solid" name="star-half"></box-icon> 4.5 -
-						<box-icon name="timer"></box-icon> 30 mins
+						<box-icon type="solid" name="star-half"></box-icon> {res_rating} -
+						<box-icon name="timer"></box-icon> {res_deliveryTime} mins
 					</p>
 					<p className="res-cuisine mb-0">
-						<span>Cuisines</span>: Burgers, Steaks, Sandwiches...
+						<span>Cuisines</span>: {res_cuisines.join(", ")}...
 					</p>
 					<p className="res-location mb-0">
-						<span>Location</span>: Hyderabad
+						<span>Location</span>: {res_location}
 					</p>
 				</div>
 			</div>
