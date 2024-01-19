@@ -16,7 +16,7 @@ const RestaurantCard = ({ resDetails } = props) => {
 				<div className="res-deets pt-3">
 					<h5 className="res-title">{res_title}</h5>
 					<p className="res-rating d-flex align-items-center">
-						<box-icon type="solid" name="star-half"></box-icon> {res_rating} -
+						<box-icon type="solid" name="star-half"></box-icon> {res_rating} |
 						<box-icon name="timer"></box-icon> {res_deliveryTime} mins
 					</p>
 					<p className="res-cuisine mb-0">

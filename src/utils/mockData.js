@@ -3,7 +3,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 1",
+		res_title: "Dominos",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -12,7 +12,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 2",
+		res_title: "KFC",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -21,7 +21,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 3",
+		res_title: "McDonalds",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -30,7 +30,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 4",
+		res_title: "Kababjees",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -39,7 +39,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 5",
+		res_title: "Ridan house of mandi",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -48,7 +48,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 6",
+		res_title: "Mandi House",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -57,7 +57,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 7",
+		res_title: "Havabite",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -66,7 +66,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 8",
+		res_title: "Al-Habib Restaurant",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -75,7 +75,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 9",
+		res_title: "Pie in the sky",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -84,7 +84,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 10",
+		res_title: "Gloria Jeans",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -93,7 +93,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 11",
+		res_title: "Karachi Broast",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -102,7 +102,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 12",
+		res_title: "Burger o clock",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
@@ -111,7 +111,7 @@ const resList = [
 	{
 		id: Math.floor(Math.random() * 999),
 		image_url: "https://images.deliveryhero.io/image/fd-pk/LH/hwd6-listing.jpg",
-		res_title: "Res Title 13",
+		res_title: "Cluckys",
 		res_rating: (Math.random() * 5).toFixed(2),
 		res_deliveryTime: Math.floor(Math.random() * 46),
 		res_cuisines: ["Burgers", "Steaks", "Sandwiches"],
