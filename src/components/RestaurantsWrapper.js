@@ -13,10 +13,8 @@ const RestaurantsWrapper = () => {
 					return res.res_title.includes(userInput);
 				})
 			);
-			console.log(userInput);
 		} else {
 			setrestuarantsList(resList);
-			console.log("Please Enter value");
 		}
 	};
 	return (
